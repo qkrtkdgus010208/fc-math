@@ -16,9 +16,17 @@ public class E04VectorBasic : MonoBehaviour
         Vector3 r2 = a - b;
         Debug.Log($"r2: {r2}");
 
-        float d = Mathf.Sqrt(Mathf.Pow(r2.x, 2) + Mathf.Pow(r2.y, 2) + Mathf.Pow(r2.z, 2));
-        Debug.Log($"d: {d}");
+        Vector3 r3 = b - a;
+        Debug.Log($"r3: {r3}");
+
+        float d1 = Mathf.Sqrt(Mathf.Pow(r2.x, 2) + Mathf.Pow(r2.y, 2) + Mathf.Pow(r2.z, 2));
+        Debug.Log($"d1: {d1}");
         Debug.Log($"magnitude: {r2.magnitude}");
         Debug.Log($"distance: {Vector3.Distance(a, b)}");
+
+        float d2 = Mathf.Sqrt(Mathf.Pow(r3.x, 2) + Mathf.Pow(r3.y, 2) + Mathf.Pow(r3.z, 2));
+        Debug.Log($"d2: {d2}");
+        Debug.Log($"magnitude: {r3.magnitude}");
+        Debug.Log($"distance: {Vector3.Distance(b, a)}");
     }
 }
