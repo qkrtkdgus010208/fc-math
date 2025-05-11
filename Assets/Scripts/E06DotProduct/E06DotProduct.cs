@@ -19,8 +19,8 @@ public class E06DotProduct : MonoBehaviour
         // tan(theta) = ≥Ù¿Ã / πÿ∫Ø
         // ≥Ù¿Ã = πÿ∫Ø * tan(theta)
 
-        float baseValue = 1 * Mathf.Cos(45);
-        float heightValue = baseValue * Mathf.Tan(45);
+        float baseValue = 1 * Mathf.Cos(45 * Mathf.Deg2Rad);
+        float heightValue = baseValue * Mathf.Tan(45 * Mathf.Deg2Rad);
 
         Vector3 v3 = new Vector3(baseValue, heightValue, 0);
 
